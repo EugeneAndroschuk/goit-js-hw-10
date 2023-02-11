@@ -15,6 +15,7 @@ input.addEventListener(
 
 function onInput() {
   const name = input.value.trim();
+  if (name === "") return;
 
   fetchCountries(name)
     .then(countries => {
